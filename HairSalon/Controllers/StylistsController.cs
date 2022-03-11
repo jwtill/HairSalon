@@ -38,11 +38,13 @@ namespace HairSalon.Controllers
     public ActionResult Details(int id)
     {
       Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+      ViewBag.PageTitle = "Stylist Details";
       return View(thisStylist);
     }
      public ActionResult Edit(int id)
     {
       var thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+      ViewBag.PageTitle = "Edit Stylist";
       return View(thisStylist);
     }
     [HttpPost]
@@ -56,6 +58,7 @@ namespace HairSalon.Controllers
     public ActionResult Delete(int id)
     {
       var thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+       ViewBag.PageTitle = "Delete Stylist";
       return View(thisStylist);
     }
     [HttpPost, ActionName("Delete")]
