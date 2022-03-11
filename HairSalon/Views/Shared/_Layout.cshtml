@@ -15,8 +15,10 @@
 </head>
 
 <body>
-  @RenderBody()
-  @await Html.PartialAsync("Footer")
+  <div class="container">
+    @RenderBody()
+    @await Html.PartialAsync("Footer")
+  </div>
 
 </body>
 
