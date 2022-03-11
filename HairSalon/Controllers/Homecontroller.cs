@@ -8,6 +8,7 @@ namespace HairSalon.Controllers
       [HttpGet("/")]
       public ActionResult Index()
       {
+        ViewBag.PageTitle = "Welcome!";
         return View();
       }
 

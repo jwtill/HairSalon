@@ -18,10 +18,12 @@ namespace HairSalon.Controllers
     public ActionResult Index()
     {
       List<Stylist> model = _db.Stylists.ToList();
+      ViewBag.PageTitle = "Stylists";
       return View(model);
     }
     public ActionResult Create()
     {
+      ViewBag.PageTitle = "Add Stylist";
       return View();
     }
 
