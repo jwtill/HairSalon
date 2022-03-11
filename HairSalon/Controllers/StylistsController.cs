@@ -26,7 +26,15 @@ namespace HairSalon.Controllers
       ViewBag.PageTitle = "Add Stylist";
       return View();
     }
+    [HttpPost]
+    public ActionResult Create(Stylist stylist)
+    {
+      _db.Stylists.Add(stylist);
+      _db.SaveChanges();
+      ViewBag.PageTitle = "View Stylists";
+      return RedirectToAction("Index");
+    }
 
-    
+
   }
 }
