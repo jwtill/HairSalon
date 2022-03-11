@@ -26,7 +26,7 @@ namespace HairSalon.Controllers
       ViewBag.PageTitle = "Add Stylist";
       return View();
     }
-    
+
     [HttpPost]
     public ActionResult Create(Stylist stylist)
     {
@@ -34,6 +34,11 @@ namespace HairSalon.Controllers
       _db.SaveChanges();
       ViewBag.PageTitle = "View Stylists";
       return RedirectToAction("Index");
+    }
+    public ActionResult Details(int id)
+    {
+      Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+      return View(thisStylist);
     }
 
 

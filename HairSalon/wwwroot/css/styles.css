@@ -1,13 +1,11 @@
 body {
   background-color: purple;
   padding: 10px;
-  
-  font-family: 'Pacifico', cursive;
-  
 }
 h1 {
   color: white;
   text-align: center;
+  font-family: 'Pacifico', cursive;
 }
 a {
   color: white;
