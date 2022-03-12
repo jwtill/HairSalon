@@ -1,4 +1,4 @@
-![Project Schema](url "~/images/schema")
+
 
 
 <h1 align="center">Eau Claire's Salon</h1>
@@ -6,7 +6,7 @@
 
 Josh Tillinghast | [LinkedIn](https://www.linkedin.com/in/jwtill/) | [email](mailto:<jwtill@icloud.com>) 
 
-
+![Project Schema](url "~/images/schema.png")
 ## About this project
 An MVC application that tracks stylists and their clients for Eau Claire's Salon
 ## Get Started
