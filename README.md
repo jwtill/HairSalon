@@ -11,9 +11,10 @@ Josh Tillinghast | [LinkedIn](https://www.linkedin.com/in/jwtill/) | [email](mai
 An MVC application that tracks stylists and their clients for Eau Claire's Salon
 ## Get Started
 ### Download and populate project
-- Ensure that you have installed the latest versions of Git ([instructions](https://github.com/git-guides/install-git)) 
+- Ensure that you have installed the latest versions of Git ([instructions](https://github.com/git-guides/install-git)), as well as MySQL Workbench
 - In your command line, clone this repository using `$ git clone https://github.com/jwtill/HairSalon.git`
-- Use the command `$ dotnet build` in the `HairSalon/HairSalon` folder to build the project, then `dotnet run` to start the application.
+- Use the command `$ dotnet build` in the `HairSalon.Solution/HairSalon` folder to build the project, then `dotnet run` to start the application.
+- Open MySQL Workbench, navigate to data import/restore, under the administration tab. Select import from self contained file and select josh_tillinghast.sql in the root folder of this project.
 
 
 
@@ -23,6 +24,7 @@ This site incorporates the following frameworks and languages:
 
 - C #
 - .NET
+- MySQL Workbench
 - MVC(Model View Controller) design
 - HTML
 
