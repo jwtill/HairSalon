@@ -1,6 +1,3 @@
-
-
-
 <h1 align="center">Eau Claire's Salon</h1>
 
 
@@ -13,8 +10,18 @@ An MVC application that tracks stylists and their clients for Eau Claire's Salon
 ### Download and populate project
 - Ensure that you have installed the latest versions of Git ([instructions](https://github.com/git-guides/install-git)), as well as MySQL Workbench
 - In your command line, clone this repository using `$ git clone https://github.com/jwtill/HairSalon.git`
-- Use the command `$ dotnet build` in the `HairSalon.Solution/HairSalon` folder to build the project, then `dotnet run` to start the application.
 - Open MySQL Workbench, navigate to data import/restore, under the administration tab. Select import from self contained file and select josh_tillinghast.sql in the root folder of this project.
+- Under the import progress tab, select start import.
+- Make a new file called appsettings.json in the root folder of the project
+with the following text:
+{
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=3306;database=josh_tillinghast;uid=root;pwd=[YourPassword];"
+  }
+}
+- Replace [YourPassword] with the password you use to connect to MySQL. 
+– Navigate to the HairSalon folder, and enter "dotnet restore" to install the required dependencies, then "dotnet run" to start the program.
+
 
 
 
