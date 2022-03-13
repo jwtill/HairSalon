@@ -3,7 +3,7 @@
 
 Josh Tillinghast | [LinkedIn](https://www.linkedin.com/in/jwtill/) | [email](mailto:<jwtill@icloud.com>) 
 
-![Project Schema](url ".HairSalon/wwwroot/images/schema.png")
+![Project Schema](url "./HairSalon/wwwroot/images/schema.png")
 ## About this project
 An MVC application that tracks stylists and their clients for Eau Claire's Salon
 ## Get Started
