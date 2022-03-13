@@ -7,11 +7,19 @@
 
 <h2>Stylist Details</h2>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.StylistName): @Html.DisplayFor(model => model.StylistName)</h3>
+<h3>Stylist Name: @Html.DisplayFor(model => model.StylistName)</h3>
 <h3>Clients:</h3>
-@foreach (Client client in @Model.Clients)
+@if (Model.Clients.Count == 0)
 {
-  <p>@client.ClientName</p>
+  <p>There are no clients to display.</p>
+  <p>@Html.ActionLink("Add a new client", "Create", "Clients")</p>
+}
+else
+{
+  @foreach (Client client in @Model.Clients)
+  {
+    <p>@client.ClientName</p>
+  }
 }
 
 
